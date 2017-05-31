@@ -1,0 +1,1 @@
+This is lexical analyzer. As an input parameter it takes an Assembler program. As a result it outputs all the information about lexems (such as: number, type, name, number of string, etc). Check this out!

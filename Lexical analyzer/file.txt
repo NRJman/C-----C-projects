@@ -1,0 +1,30 @@
+data segment
+  val1 db 'StïåðÅring'
+  val2 dw 101asf010b
+  val22 dw 1012010b
+  val3 dd 245h
+  val3 dd 24s5h
+  val4 dd 28d
+  val4444444 dd 2a8d
+data ends
+assume cs:code,ds:data
+code Segment
+ 
+start:
+	push eax
+	cmp eax,ebx
+	jc cnt
+	jmp end1
+cnt:
+	add eax,dword ptr [edx+ecx]
+	mul dword ptr [bp+si]
+	mov ebx, eax
+	adc bx, word ptr [edx+esi]
+	sub word ptr [bp+di], bx
+	cmp ecx, 01a10
+	xor dword ptr [bx+di], 35h
+	jmp cnt
+	jc  cnt
+end1:
+code ends
+end

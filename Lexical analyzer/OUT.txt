@@ -1,0 +1,132 @@
+
+Lexeme number 1  Lexeme: DATA  Length: 4  Type: Identifier  String number: 1
+Lexeme number 2  Lexeme: SEGMENT  Length: 7  Type: Directive  String number: 1
+
+Lexeme number 1  Lexeme: VAL1  Length: 4  Type: Identifier  String number: 2
+Lexeme number 2  Lexeme: DB  Length: 2  Type: Directive  String number: 2
+Lexeme number 3  Lexeme: 'StïåðÅring'  Length: 12  Type: TXT_const  String number: 2
+
+Lexeme number 1  Lexeme: VAL2  Length: 4  Type: Identifier  String number: 3
+Lexeme number 2  Lexeme: DW  Length: 2  Type: Directive  String number: 3
+ALARM! PLEASE, WRITE CORRECT NUMBER!!!!!!!
+Lexeme number 1  Lexeme: VAL22  Length: 5  Type: Identifier  String number: 4
+Lexeme number 2  Lexeme: DW  Length: 2  Type: Directive  String number: 4
+Lexeme number 3  Lexeme: 1012010B  Length: 8  Type: NUM_const  String number: 4
+
+Lexeme number 1  Lexeme: VAL3  Length: 4  Type: Identifier  String number: 5
+Lexeme number 2  Lexeme: DD  Length: 2  Type: Directive  String number: 5
+Lexeme number 3  Lexeme: 245H  Length: 4  Type: NUM_const  String number: 5
+
+Lexeme number 1  Lexeme: VAL3  Length: 4  Type: Identifier  String number: 6
+Lexeme number 2  Lexeme: DD  Length: 2  Type: Directive  String number: 6
+ALARM! PLEASE, WRITE CORRECT NUMBER!!!!!!!
+Lexeme number 1  Lexeme: VAL4  Length: 4  Type: Identifier  String number: 7
+Lexeme number 2  Lexeme: DD  Length: 2  Type: Directive  String number: 7
+Lexeme number 3  Lexeme: 28D  Length: 3  Type: NUM_const  String number: 7
+
+The identifier length is more than 8! Write correct identifier!!!
+Lexeme number 2  Lexeme: DD  Length: 2  Type: Directive  String number: 8
+ALARM! PLEASE, WRITE CORRECT NUMBER!!!!!!!
+Lexeme number 1  Lexeme: DATA  Length: 4  Type: Identifier  String number: 9
+Lexeme number 2  Lexeme: ENDS  Length: 4  Type: Directive  String number: 9
+
+Lexeme number 1  Lexeme: ASSUME  Length: 6  Type: Directive  String number: 10
+Lexeme number 2  Lexeme: CS  Length: 2  Type: Segment  String number: 10
+Lexeme number 3  Lexeme: :  Length: 1  Type: One symbol  String number: 10
+Lexeme number 4  Lexeme: CODE  Length: 4  Type: Identifier  String number: 10
+Lexeme number 5  Lexeme: ,  Length: 1  Type: One symbol  String number: 10
+Lexeme number 6  Lexeme: DS  Length: 2  Type: Segment  String number: 10
+Lexeme number 7  Lexeme: :  Length: 1  Type: One symbol  String number: 10
+Lexeme number 8  Lexeme: DATA  Length: 4  Type: Identifier  String number: 10
+
+Lexeme number 1  Lexeme: CODE  Length: 4  Type: Identifier  String number: 11
+Lexeme number 2  Lexeme: SEGMENT  Length: 7  Type: Directive  String number: 11
+
+
+Lexeme number 1  Lexeme: START  Length: 5  Type: Identifier  String number: 13
+Lexeme number 2  Lexeme: :  Length: 1  Type: One symbol  String number: 13
+
+Lexeme number 1  Lexeme: PUSH  Length: 4  Type: Instruction  String number: 14
+Lexeme number 2  Lexeme: EAX  Length: 3  Type: 32 Bit  String number: 14
+
+Lexeme number 1  Lexeme: CMP  Length: 3  Type: Instruction  String number: 15
+Lexeme number 2  Lexeme: EAX  Length: 3  Type: 32 Bit  String number: 15
+Lexeme number 3  Lexeme: ,  Length: 1  Type: One symbol  String number: 15
+Lexeme number 4  Lexeme: EBX  Length: 3  Type: 32 Bit  String number: 15
+
+Lexeme number 1  Lexeme: JC  Length: 2  Type: Instruction  String number: 16
+Lexeme number 2  Lexeme: CNT  Length: 3  Type: Identifier  String number: 16
+
+Lexeme number 1  Lexeme: JMP  Length: 3  Type: Instruction  String number: 17
+Lexeme number 2  Lexeme: END1  Length: 4  Type: Identifier  String number: 17
+
+Lexeme number 1  Lexeme: CNT  Length: 3  Type: Identifier  String number: 18
+Lexeme number 2  Lexeme: :  Length: 1  Type: One symbol  String number: 18
+
+Lexeme number 1  Lexeme: ADD  Length: 3  Type: Instruction  String number: 19
+Lexeme number 2  Lexeme: EAX  Length: 3  Type: 32 Bit  String number: 19
+Lexeme number 3  Lexeme: ,  Length: 1  Type: One symbol  String number: 19
+Lexeme number 4  Lexeme: DWORD  Length: 5  Type: Directive  String number: 19
+Lexeme number 5  Lexeme: PTR  Length: 3  Type: Directive  String number: 19
+Lexeme number 6  Lexeme: [  Length: 1  Type: One symbol  String number: 19
+Lexeme number 7  Lexeme: EDX  Length: 3  Type: 32 Bit  String number: 19
+Lexeme number 8  Lexeme: +  Length: 1  Type: One symbol  String number: 19
+Lexeme number 9  Lexeme: ECX  Length: 3  Type: 32 Bit  String number: 19
+Lexeme number 10  Lexeme: ]  Length: 1  Type: One symbol  String number: 19
+
+Lexeme number 1  Lexeme: MUL  Length: 3  Type: Instruction  String number: 20
+Lexeme number 2  Lexeme: DWORD  Length: 5  Type: Directive  String number: 20
+Lexeme number 3  Lexeme: PTR  Length: 3  Type: Directive  String number: 20
+Lexeme number 4  Lexeme: [  Length: 1  Type: One symbol  String number: 20
+Lexeme number 5  Lexeme: BP  Length: 2  Type: Index reg  String number: 20
+Lexeme number 6  Lexeme: +  Length: 1  Type: One symbol  String number: 20
+Lexeme number 7  Lexeme: SI  Length: 2  Type: Index reg  String number: 20
+Lexeme number 8  Lexeme: ]  Length: 1  Type: One symbol  String number: 20
+
+Lexeme number 1  Lexeme: MOV  Length: 3  Type: Instruction  String number: 21
+Lexeme number 2  Lexeme: EBX  Length: 3  Type: 32 Bit  String number: 21
+Lexeme number 3  Lexeme: ,  Length: 1  Type: One symbol  String number: 21
+Lexeme number 4  Lexeme: EAX  Length: 3  Type: 32 Bit  String number: 21
+
+Lexeme number 1  Lexeme: ADC  Length: 3  Type: Instruction  String number: 22
+Lexeme number 2  Lexeme: BX  Length: 2  Type: 16 Bit  String number: 22
+Lexeme number 3  Lexeme: ,  Length: 1  Type: One symbol  String number: 22
+Lexeme number 4  Lexeme: WORD  Length: 4  Type: Directive  String number: 22
+Lexeme number 5  Lexeme: PTR  Length: 3  Type: Directive  String number: 22
+Lexeme number 6  Lexeme: [  Length: 1  Type: One symbol  String number: 22
+Lexeme number 7  Lexeme: EDX  Length: 3  Type: 32 Bit  String number: 22
+Lexeme number 8  Lexeme: +  Length: 1  Type: One symbol  String number: 22
+Lexeme number 9  Lexeme: ESI  Length: 3  Type: 32 Bit  String number: 22
+Lexeme number 10  Lexeme: ]  Length: 1  Type: One symbol  String number: 22
+
+Lexeme number 1  Lexeme: SUB  Length: 3  Type: Instruction  String number: 23
+Lexeme number 2  Lexeme: WORD  Length: 4  Type: Directive  String number: 23
+Lexeme number 3  Lexeme: PTR  Length: 3  Type: Directive  String number: 23
+Lexeme number 4  Lexeme: [  Length: 1  Type: One symbol  String number: 23
+Lexeme number 5  Lexeme: BP  Length: 2  Type: Index reg  String number: 23
+Lexeme number 6  Lexeme: +  Length: 1  Type: One symbol  String number: 23
+Lexeme number 7  Lexeme: DI  Length: 2  Type: Index reg  String number: 23
+Lexeme number 8  Lexeme: ]  Length: 1  Type: One symbol  String number: 23
+Lexeme number 9  Lexeme: ,  Length: 1  Type: One symbol  String number: 23
+Lexeme number 10  Lexeme: BX  Length: 2  Type: 16 Bit  String number: 23
+
+Lexeme number 1  Lexeme: CMP  Length: 3  Type: Instruction  String number: 24
+Lexeme number 2  Lexeme: ECX  Length: 3  Type: 32 Bit  String number: 24
+Lexeme number 3  Lexeme: ,  Length: 1  Type: One symbol  String number: 24
+ALARM! PLEASE, WRITE CORRECT NUMBER!!!!!!!
+Lexeme number 1  Lexeme: XOR  Length: 3  Type: Instruction  String number: 25
+Lexeme number 2  Lexeme: DWORD  Length: 5  Type: Directive  String number: 25
+Lexeme number 3  Lexeme: PTR  Length: 3  Type: Directive  String number: 25
+Lexeme number 4  Lexeme: [  Length: 1  Type: One symbol  String number: 25
+Lexeme number 5  Lexeme: BX  Length: 2  Type: 16 Bit  String number: 25
+Lexeme number 6  Lexeme: +  Length: 1  Type: One symbol  String number: 25
+Lexeme number 7  Lexeme: DI  Length: 2  Type: Index reg  String number: 25
+Lexeme number 8  Lexeme: ]  Length: 1  Type: One symbol  String number: 25
+Lexeme number 9  Lexeme: ,  Length: 1  Type: One symbol  String number: 25
+Lexeme number 10  Lexeme: 35H  Length: 3  Type: NUM_const  String number: 25
+
+Lexeme number 1  Lexeme: JMP  Length: 3  Type: Instruction  String number: 26
+Lexeme number 2  Lexeme: CNT  Length: 3  Type: Identifier  String number: 26
+
+Lexeme number 1  Lexeme: JC  Length: 2  Type: Instruction  String number: 27
+Lexeme number 2  Lexeme: CNT  Length: 3  Type: Identifier  String number: 27

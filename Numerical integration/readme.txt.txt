@@ -1,0 +1,1 @@
+Purpose: to investigate methods of numerical integration using generalized quadrature formulas.

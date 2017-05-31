@@ -1,0 +1,1 @@
+Purpose: to investigate the function approximation method using natural cubic splines.

@@ -1,0 +1,1 @@
+Purpose: to explore the function approximation using the least squares method.
