@@ -1,7 +1,6 @@
 #include "source.h"
 
-void SentencePart()
-{
+void SentencePart(){
 	ofstream fout;
 	fout.open("sent_OUT.txt");
 	fout.close();
@@ -18,145 +17,18 @@ void SentencePart()
 
 	fout << "|Label field|      Mnem field      |    1st operand     |    2nd operand     |" << endl;
 	fout << "|   Number  |  Num_first|Quantity  | Num_first|Quantity | Num_first|Quantity |" << endl;
-	num_str++;									//1				
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
 
-	num_str++;									//2
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
+	int i;
 
-	num_str++;									//3
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//4
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//5
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//6
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//7
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//8
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//9
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//10
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//11
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//12
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//13
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//14
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//15
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//16
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//17
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//18
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//19
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//20
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//21
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//22
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//23
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//24
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//25
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//26
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-
-	num_str++;									//27
-	num_lex = 0;
-	fin.getline(buf, 50);
-	SentenceCheck(buf, lexeme, num_lex, num_str);
-	fout.close();
+	for (i = 0; i < 27; i++){
+		num_str++;
+		num_lex = 0;
+		fin.getline(buf, 50);
+		SentenceCheck(buf, lexeme, num_lex, num_str);
+	}
 }
 
-void SentenceCheck(char* buf, string lexeme, int num_lex, int num_str)
-{
+void SentenceCheck(char* buf, string lexeme, int num_lex, int num_str){
 	int label_place;
 	int mnem_place, mnem_quant;
 	int operand1_place, operand1_quant;

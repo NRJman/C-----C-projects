@@ -1,9 +1,6 @@
 #include "source.h"
 
-void LetsGetItStarted()
-
-{
-
+void LetsGetItStarted(){
 	ofstream fout;
 	fout.open("OUT.txt");
 	fout.close();
@@ -15,145 +12,18 @@ void LetsGetItStarted()
 
 	num_str = 0;
 	ifstream fin("file.txt");
-	
-	num_str++;										//1
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
 
-	num_str++;										//2
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
+	int i;
 
-	num_str++;										//3
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//4
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//5
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-	
-	num_str++;										//6
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-	
-	num_str++;										//7
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-	
-	num_str++;										//8
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//9
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//10
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//11
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//12
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//13
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//14
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//15
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//16
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//17
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//18
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//19
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//20
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-	
-	num_str++;										//21
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//22
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//23
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//24
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//25
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//26
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
-
-	num_str++;										//27
-	num_lex = 0;
-	fin.getline(buf, 50);
-	Check(buf, lexeme, num_lex, num_str, S_name);
+	for (i = 0; i < 27; i++){
+		num_str++;
+		num_lex = 0;
+		fin.getline(buf, 50);
+		Check(buf, lexeme, num_lex, num_str, S_name);
+	}
 }
 
-void Check(char* buf, string lexeme, int num_lex, int num_str, Token S_name)
-{
+void Check(char* buf, string lexeme, int num_lex, int num_str, Token S_name){
 	int i, j, len, help, mem;
 	int k, prapor;
 	ofstream fout;
@@ -328,7 +198,7 @@ void Check(char* buf, string lexeme, int num_lex, int num_str, Token S_name)
 			S_name.str_n = num_str;
 			Vadim.push_back(S_name);
 			fout << "Lexeme number " << S_name.lex_n << "  Lexeme: " << S_name.lex << "  Length: " << S_name.lex_len << "  Type: " << S_name.type_lex << "  String number: " << S_name.str_n << endl;
-			++help; //bo v cikl ne zaishlo, tomu zbilshuemo vruchnu
+			++help;
 			mem = help;
 			++j;
 			lexeme = "";
